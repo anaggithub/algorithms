@@ -1,0 +1,25 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "algorithms practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anaggithub/algorithms.git"
+  },
+  "keywords": [
+    "algorithms"
+  ],
+  "author": "hadita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anaggithub/algorithms/issues"
+  },
+  "homepage": "https://github.com/anaggithub/algorithms#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
