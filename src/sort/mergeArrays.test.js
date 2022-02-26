@@ -3,8 +3,8 @@ const mergeArrays = require('./mergeArrays');
 describe('merge arrays function', () => {
 
     test('should return a sorted array in ascending order', () => {
-        const expected = [1,4,5,10];
-        const array1 = [1,4], array2 = [5,10];
+        const expected = [1,4,5,6,10];
+        const array1 = [1,5], array2 = [4,6,10];
         const result = mergeArrays(array1, array2);
         expect(result).toEqual(expected);
     })
