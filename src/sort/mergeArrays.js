@@ -1,14 +1,12 @@
-//const array1 = [] , array2 = [1,9];
+// Este método solo funciona si los arrays ya están ordenados
 
 const mergeArrays = (array1, array2) => {
-  console.log(array1, array2)
   let mergedArrays = [];
 
-  const merge = () => {
+  const merge = (array1, array2) => {
     const array1Copy = [...array1];
     const array2Copy = [...array2];
     if (!array1Copy.length && !array2Copy.length) return mergedArrays;
-
     if (array1Copy[0] < array2Copy[0] || !array2Copy.length) {
       mergedArrays.push(array1Copy[0]);
       array1Copy.shift();
@@ -19,6 +17,7 @@ const mergeArrays = (array1, array2) => {
     merge(array1Copy, array2Copy);
   };
 
+  merge(array1, array2);
   return mergedArrays;
 };
 
