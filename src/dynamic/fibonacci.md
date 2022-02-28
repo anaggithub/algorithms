@@ -40,7 +40,6 @@ previous1 = fibonacci(3-1) (2)  // 1
 
 ---------
     fibonacci(2) // 1
-
     previous1 = fibonacci(2-1) (1)  // 1
     previous2 = fibonacci(2-1) (0)  // 0
     previous1 + previous2 // 1 + 0 = 1
@@ -50,7 +49,6 @@ previous2 = fibonacci(3-2) (1)  // 1
 
 ---------
     fibonacci(1) // 1 
-
 return previous1 + previous2 // 1 + 1 = 2
 
 
@@ -73,5 +71,12 @@ previous1 = fibonnaci(4-1) (3) // 2
     return 1 + 1 = 2;  // 2
 
 previous2 = fibonnaci(4-2) (2)  //1
+
+---------
+    fibonacci(2) // 1
+    previous1 = fibonacci(2-1) (1)  // 1
+    previous2 = fibonacci(2-1) (0)  // 0
+    previous1 + previous2 // 1 + 0 = 1
+
 
 return 2 + 1 = 3
