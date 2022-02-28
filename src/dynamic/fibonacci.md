@@ -61,6 +61,7 @@ previous1 = fibonnaci(4-1) (3) // 2
     fibonacci(3) // 
     previous1 = fibonnaci(3-1) (2)  // 1
 
+        ---------
         fibonacci(2) // 
         previous1 = fibonnaci(2-1) (1) // 1
         previous2 = fibonnaci(2-2) (0) // 0
