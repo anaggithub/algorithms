@@ -8,17 +8,15 @@ describe('merge arrays function', () => {
         const result = mergeArrays(array1, array2);
         expect(result).toEqual(expected);
     })
-    test('should return a sorted array if any of the arrays are empty', () => {
-        const expected = [1,2];
+    test('should return first array if 2nd array is empty', () => {
         const array1 = [1,2], array2 = [];
         const result = mergeArrays(array1, array2);
-        expect(result).toEqual(expected);
+        expect(result).toEqual(array1);
     })
 
-    test('should return a sorted array if any of the arrays are empty', () => {
-        const expected = [1,5,6];
+    test('should return a second array if 1st array is empty', () => {
         const array1 = [], array2 = [1,5,6];
         const result = mergeArrays(array1, array2);
-        expect(result).toEqual(expected);
+        expect(result).toEqual(array2);
     })
 })
