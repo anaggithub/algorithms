@@ -19,5 +19,5 @@ Luego para implementar jest y poder hacer los tests seguí los siguientes pasos:
 
 Luego para correr los tests uso el comando "npm test".
 
-## Uso de modules
+### Uso de modules
 Al no usar Babel no puede entender la sintaxis de import/export y por lo tanto estoy usando "modules.export" y "require".

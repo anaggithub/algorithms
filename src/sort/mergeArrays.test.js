@@ -13,7 +13,6 @@ describe('merge arrays function', () => {
         const result = mergeArrays(array1, array2);
         expect(result).toEqual(array1);
     })
-
     test('should return second array if first array is empty', () => {
         const array1 = [], array2 = [1,5,6];
         const result = mergeArrays(array1, array2);
