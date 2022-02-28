@@ -21,3 +21,7 @@ Luego para correr los tests uso el comando "npm test".
 
 ## Uso de modules
 Al no usar Babel no puede entender la sintaxis de import/export y por lo tanto estoy usando "modules.export" y luego "require".
+
+## Algoritmos
+La mayoría de los algoritmos de este repo fueron tomados del curso de Front End Masters: https://frontendmasters.com/courses/practical-algorithms/
+
