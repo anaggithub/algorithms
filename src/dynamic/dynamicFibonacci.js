@@ -11,7 +11,7 @@ const dynamicFibonacci = (num) => {
       const previous1 = fibonacci(num - 1);
       const previous2 = fibonacci(num - 2);
       cache[num] = previous1 + previous2;
-      console.log("el cache: ", cache);
+    //  console.log("el cache: ", cache);
       return cache[num];
     }
   };
