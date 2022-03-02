@@ -147,10 +147,64 @@ countOuter = 4
 
 se sale del for.
 
-
-
 countOuter: 4
 countInner: 16
 countSwap: 5
 
+# Call Stack Game - Version optimizada
 
+function bubbleSort(array) {
+  let swapped;
+  let count = 0;
+  do {
+    swapped = false;
+    for (let i = 0; i < array.length - 1; i++) {
+      if (array[i] > array[i + 1]) {
+        [array[i], array[i + 1]] = [array[i + 1], array[i]];
+        swapped = true;
+        count++;
+      }
+    }
+  } while (swapped);
+  //return { data: array, swaps: count };
+  return array;
+}
+
+## bubbleSort([3,2,5]) // [1,2,5]
+
+do:
+    swapped = false;
+
+    for (let i = 0; i < array.length - 1; i++) {      // i = 0     array.length - 1 = 2 
+        countInner: 1   
+        if (array[i] > array[i + 1]) {     true       // array: [2,3,5]
+        swapped = true;                        
+             
+
+    for (let i = 0; i < array.length - 1; i++) {      // i = 1
+        countInner: 2
+        if (array[i] > array[i + 1]) {     false
+
+    acá ya no entra al for porque i es 2 y no es menor a array.length -1 (que es 2 también)
+
+    swapped quedó en true, por tanto entra al while:
+
+while:
+
+    for (let i = 0; i < array.length - 1; i++) {      // i = 0     array.length - 1 = 2   // array: [2,3,5]
+        countInner: 3
+        if (array[i] > array[i + 1]) {     false       
+                             
+
+    for (let i = 0; i < array.length - 1; i++) {      // i = 1
+        countInner: 4
+        if (array[i] > array[i + 1]) {     false
+
+
+    swapped quedó en false, por tanto ya no entra al while:
+
+//cuando en una iteración completa del for no hace ningun swapp, ahí se sale del while.
+
+countOuter: 2
+countInner: 4
+countSwap: 1
